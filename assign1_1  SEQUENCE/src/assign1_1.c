@@ -23,7 +23,7 @@ int main(void)
 
 	printf("its difference is %d\n",a-b);
 
-	printf("its hahahah product is %d\n",a*b);
+	printf("its hahahah  no no no no no product is %d\n",a*b);
 
 	return EXIT_SUCCESS;
 }
