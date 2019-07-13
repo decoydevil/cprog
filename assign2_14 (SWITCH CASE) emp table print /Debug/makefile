@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: assign2_14
+all: assign2_14\ (SWITCH\ CASE)\ emp\ table\ print
 
 # Tool invocations
-assign2_14: $(OBJS) $(USER_OBJS)
+assign2_14\ (SWITCH\ CASE)\ emp\ table\ print: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "assign2_14" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "assign2_14 (SWITCH CASE) emp table print" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) assign2_14
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) "assign2_14 (SWITCH CASE) emp table print"
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: assign2_7a
+all: assign2_7a\ \ \ leap\ year\ check\ (IF-ELSE)
 
 # Tool invocations
-assign2_7a: $(OBJS) $(USER_OBJS)
+assign2_7a\ \ \ leap\ year\ check\ (IF-ELSE): $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "assign2_7a" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "assign2_7a   leap year check (IF-ELSE)" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) assign2_7a
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) "assign2_7a   leap year check (IF-ELSE)"
 	-@echo ' '
 
 .PHONY: all clean dependents

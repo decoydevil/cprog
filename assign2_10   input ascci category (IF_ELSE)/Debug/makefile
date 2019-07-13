@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: assign2_10
+all: assign2_10\ \ \ input\ ascci\ category\ (IF_ELSE)
 
 # Tool invocations
-assign2_10: $(OBJS) $(USER_OBJS)
+assign2_10\ \ \ input\ ascci\ category\ (IF_ELSE): $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "assign2_10" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "assign2_10   input ascci category (IF_ELSE)" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) assign2_10
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) "assign2_10   input ascci category (IF_ELSE)"
 	-@echo ' '
 
 .PHONY: all clean dependents
